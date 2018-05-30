@@ -1,4 +1,4 @@
-{% set version = '1.4.4' %}
+{% set version = "1.4.7" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -13,7 +13,7 @@ source:
     - https://cran.r-project.org/src/contrib/apcluster_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/apcluster/apcluster_{{ version }}.tar.gz
 
-  sha256: c4c44866d33a69e70b8c5ae0850513ce79c5438845fcc68620e531a2df54a69a
+  sha256: 5ac068e40e6c90868da7ab44f8a24c32552cffacdca6545854a34bc9ab6b10a1
 
 build:
   number: 0

@@ -1,4 +1,4 @@
-{% set version = "1.4.7" %}
+{% set version = "1.4.8" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -13,13 +13,11 @@ source:
     - https://cran.r-project.org/src/contrib/apcluster_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/apcluster/apcluster_{{ version }}.tar.gz
 
-  sha256: 5ac068e40e6c90868da7ab44f8a24c32552cffacdca6545854a34bc9ab6b10a1
+  sha256: 12b23d393d2b21ba9e13f82712ad260c0b0ee4e0ba74e32227279a52b114ee53
 
 build:
   merge_build_host: True  # [win]
-  number: 1003
-  skip: true  # [win32]
-
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -35,7 +33,6 @@ requirements:
     - r-base
     - r-matrix
     - r-rcpp >=0.11.1
-
   run:
     - r-base
     - r-matrix
@@ -55,11 +52,6 @@ about:
 extra:
    recipe-maintainers:
     - conda-forge/r
-    - dpryan79
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak

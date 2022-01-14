@@ -3,11 +3,11 @@ About r-apcluster
 
 Home: https://cran.r-project.org/web/packages/apcluster/index.html
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-apcluster-feedstock/blob/master/LICENSE.txt)
 
-Summary: Implements Affinity Propagation clustering introduced by Frey and Dueck (2007) <DOI
+Summary: Implements Affinity Propagation clustering introduced by Frey and Dueck (2007) <DOI:10.1126/science.1136800>. The algorithms are largely analogous to the 'Matlab' code published by Frey and Dueck. The package further provides leveraged affinity propagation and an algorithm for exemplar-based agglomerative clustering that can also be used to join clusters obtained from affinity propagation. Various plotting functions are available for analyzing clustering results.
 
 Current build status
 ====================
@@ -109,7 +109,8 @@ conda search r-apcluster --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the

@@ -1,4 +1,4 @@
-{% set version = "1.4.11" %}
+{% set version = "1.4.12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/apcluster_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/apcluster/apcluster_{{ version }}.tar.gz
-  sha256: 4497da8766802cb18a5729ddb629368a17a967436d696941deb4b21da73e3333
+  sha256: 857dee9ea2b5f55e666a44037fd7ba1a7bd8e867b4eeda945acc93949bd04407
 
 build:
   merge_build_host: true  # [win]
@@ -22,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("c") }}                # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]

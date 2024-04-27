@@ -1,4 +1,4 @@
-{% set version = "1.4.12" %}
+{% set version = "1.4.13" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/apcluster_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/apcluster/apcluster_{{ version }}.tar.gz
-  sha256: 857dee9ea2b5f55e666a44037fd7ba1a7bd8e867b4eeda945acc93949bd04407
+  sha256: 5e975baa427def9944ec0a3ea5f8f92f4ebce4e98689b4019525d25b54d5a1a7
 
 build:
   merge_build_host: true  # [win]
